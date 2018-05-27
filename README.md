@@ -1,0 +1,4 @@
+#The Plan
+---
+* AlexNet
+* TBA
