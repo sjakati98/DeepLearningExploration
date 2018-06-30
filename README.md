@@ -1,4 +1,3 @@
-#The Plan
+# The Plan
 ---
-* AlexNet
-* TBA
+* Generative Adversarial Network
