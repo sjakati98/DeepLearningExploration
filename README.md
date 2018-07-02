@@ -1,3 +1,3 @@
 # The Plan
 ---
-* Generative Adversarial Network
+* Variational Autoencoders
