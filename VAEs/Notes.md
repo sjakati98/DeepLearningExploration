@@ -22,3 +22,7 @@ The decoder of a VAE is also a neural network. The input to this network is the 
 This is output would have lost some information of the original image. The log-likelihood itself fills the same dimensions as the original input *x*, and each pixel within the newly reconstructed
 image is decided by the aforementioned log-likelihood distributions.
 
+
+### In Practice (As I Understand It):
+
+The main idea is the create a network that can accurately extract features from an input, and represent them in the latent space, *code*, and then use a similar network to decode the latent space. The training procedure is to take that decoded output, and test against a [KL-Divergence](https://www.countbayesie.com/blog/2017/5/9/kullback-leibler-divergence-explained), and have a reconstruction loss. So, in contrast to an adversarial training process, the loss function is not assessing whether or not the image is realistic to another network but rather assessing how much information is lost in the approximation of the original distribution (original image).
